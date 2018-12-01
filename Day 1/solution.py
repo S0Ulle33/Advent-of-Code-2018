@@ -1,5 +1,6 @@
 """Solution to Advent of Code 2018, Day 1: Chronal Calibration (https://adventofcode.com/2018/day/1)."""
 import itertools
+import pathlib
 
 
 def part_one(nums):
@@ -38,7 +39,8 @@ def part_two(nums):
 
 def main():
 
-    nums = [int(line) for line in open('input.txt')]
+    input_file = pathlib.Path(__file__).resolve().parent / 'input.txt'
+    nums = [int(line) for line in input_file.open()]
 
     print(f'Part One: {part_one(nums)}')
     print(f'Part Two: {part_two(nums)}')
