@@ -13,3 +13,4 @@ if __name__ == '__main__':
         print(f'--- {day} ---')
         day_module.main()
         print("=" * (len(day) + 8))
+        print()
