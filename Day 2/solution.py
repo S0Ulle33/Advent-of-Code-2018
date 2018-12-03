@@ -28,7 +28,8 @@ def part_two(list_of_ids):
     Question:
             What letters are common between the two correct box IDs?
 
-    Finds common letters by removing the different character from either ID, that differ by exactly one character(e.g., 'fghij' and 'fguij').
+    Finds common letters by removing the different character from either ID,
+    that differ by exactly one character(e.g., 'fghij' and 'fguij').
     '''
 
     def differ_by_one_letter(s1, s2):
